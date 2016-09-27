@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Aula9</title>
+
+</head>
+<body>
+	
+	<div ng-controller="aula09controller">
+		{{pessoa | json}}
+	</div>
+
+	<div ng-controller="aula09controller2">
+		Controller 2
+		{{pessoa | json}}
+	</div>
+
+	
+	<script src="assets/js/angular/angular.min.js"></script>
+	<script src="assets/js/app.module.js"></script>
+
+	<!-- services -->
+	<script src="assets/js/aula09.service.js"></script>
+
+	<!-- factorys -->
+	<script src="assets/js/aula09.pessoa.factory.js"></script>
+
+	<!-- controllers -->
+	<script src="assets/js/aula07.controller.js"></script>
+	<script src="assets/js/aula09.controller.js"></script>
+
+
+</body>
+</html>
