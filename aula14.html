@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+	<head>
+		<meta charset="UTF-8">
+		<title>Aula14</title>
+
+	</head>
+	<body>
+		
+		<div ng-controller="aula14controller">
+			
+			<p ng-repeat="pessoa in dados">
+				Nome: {{pessoa.nome}} ({{pessoa.idade}})
+			</p>
+			
+			<button type="button" ng-click="carregaDados()">Carrega</button>
+		</div>
+
+		<script src="assets/js/angular/angular.min.js"></script>	
+		<script src="assets/js/app.module.js"></script>
+		<script src="assets/js/aula14.controller.js"></script>
+
+	</body>
+</html>

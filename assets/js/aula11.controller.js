@@ -37,7 +37,7 @@ var app = angular.module('app', ['ngRoute'])
 			templateUrl: 'aula11_pagina2.html',
 			controller : 'pagina2controller'
 		})
-		.otherwise({
+		.otherwise({    
 			redirectTo : "/"
 		});
 
