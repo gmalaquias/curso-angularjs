@@ -1,5 +1,3 @@
-
-
 app.controller('aula14controller', ['$scope', '$http', function($scope, $http){
 
 	$scope.dados = [];

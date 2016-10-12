@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+	<head>
+		<meta charset="UTF-8">
+		<title>Aula18</title>
+
+	</head>
+	<body>
+		
+		<div ng-controller="aula18controller">
+
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			
+			<p>{{ $location.protocol() }}</p>
+			<p>{{ $location.host() }}</p>
+			<p>{{ $location.port() }}</p>
+			<p>{{ $location.path() }}</p>
+			<p>Parametros URL: {{ $location.search() | json }}</p>
+			<p>{{ $location.search().id }}</p>
+			<p>Ancora na url: #{{ $location.hash() }}</p>
+			
+
+			<a href="#" ng-click="setaId(10)">Link</a>
+			<a href="#" ng-click="setaId(11)">Link</a>
+			<a href="#" ng-click="setaId(12)">Link</a>
+			<a href="#" ng-click="setaId(13)">Link</a>
+		</div>
+
+		<script src="assets/js/angular/angular.min.js"></script>	
+		<script src="assets/js/app.module.js"></script>
+		<script src="assets/js/aula18.controller.js"></script>
+	
+	</body>
+</html>
