@@ -9,10 +9,19 @@
 		
 		<div ng-controller="aula20controller">
 			
+			<h1 translate="TITULO"></h1>
+
+			<p translate="PARAGRAFO1"></p>
+
+			<button type="button" ng-click="setaIdioma('en')" translate="EN_BTN"></button>
+			<button type="button" ng-click="setaIdioma('pt-br')" translate="PTBR_BTN"></button>
+
 		</div>
 
 		<script src="assets/js/angular/angular.min.js"></script>	
-		<script src="assets/js/app.module.js"></script>
+		<script src="assets/js/bower-angular-translate/angular-translate.min.js"></script>	
+
+
 		<script src="assets/js/aula20.controller.js"></script>
 	
 	</body>
